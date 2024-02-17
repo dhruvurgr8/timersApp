@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const timerContainer = document.querySelector(".timer-container");
   const form = document.querySelector(".settime");
   const notimer = document.querySelector(".notimer");
+  const timerAudio = document.getElementById("timerAudio");
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     notimer.classList.add("istimers");
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <button class="delete-btn stop-btn">Stop</button>
               `;
             timeContainer.style.backgroundColor = "#F0F757";
+            timerAudio.play();
             return;
           }
         }
