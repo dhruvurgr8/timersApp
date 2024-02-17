@@ -40,6 +40,7 @@ body {
   font-size: 20px;
   background-color: #f0f757;
   border: none;
+  cursor: pointer;
 }
 input {
   color: white;
@@ -96,6 +97,7 @@ input::placeholder {
   font-size: 20px;
   background-color: #f0f757;
   border: none;
+  cursor: pointer;
 }
 .timer-up {
   color: black !important;
