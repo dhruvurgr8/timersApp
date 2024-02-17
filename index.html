@@ -15,15 +15,22 @@
             type="number"
             placeholder="hh"
             name="hours"
-            class="hours" />:<input
+            class="hours"
+            required />:<input
             type="number"
             placeholder="mm"
             class="minutes"
-            name="minutes" />:<input
+            name="minutes"
+            min="0"
+            max="59"
+            required />:<input
             type="number"
             name="seconds"
             placeholder="ss"
+            min="0"
+            max="59"
             class="seconds"
+            required
         /></label>
         <button type="submit" class="btn">Set</button>
       </form>
